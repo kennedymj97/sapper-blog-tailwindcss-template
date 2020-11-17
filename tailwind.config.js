@@ -18,7 +18,12 @@ module.exports = {
     typography: {
       default: {
         css: {
-          maxWidth: "none",
+          color: "#333",
+          pre: false,
+          code: false,
+          "pre code": false,
+          "code::before": false,
+          "code::after": false,
         },
       },
     },

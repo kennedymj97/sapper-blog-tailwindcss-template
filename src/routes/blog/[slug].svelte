@@ -21,9 +21,11 @@
   <title>{post.title}</title>
 </svelte:head>
 
-<header class="prose">
-  <p>{post.printDate} ~ {post.printReadingTime}</p>
-  <h1>{post.title}</h1>
-  <hr />
-</header>
-<article class="prose">{@html post.html}</article>
+<div class="mx-auto prose lg:prose-xl">
+  <header>
+    <p>{post.printDate} ~ {post.printReadingTime}</p>
+    <h1>{post.title}</h1>
+    <hr />
+  </header>
+  <article>{@html post.html}</article>
+</div>

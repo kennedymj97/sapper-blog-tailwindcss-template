@@ -1,19 +1,31 @@
 <script>
-	import successkid from 'images/successkid.jpg';
+  import successkid from "images/successkid.jpg";
 </script>
 
-<style lang="postcss">
-  .btn {
-      @apply bg-red-500 text-red-100 uppercase tracking-wide font-semibold text-4xl px-4 py-3 shadow-lg rounded;
-  }
-</style>
-
 <svelte:head>
-	<title>Sapper project template</title>
+  <title>Sapper project template</title>
 </svelte:head>
 
-<div class="text-center space-y-10">
-    <h1 class="font-bold uppercase text-7xl">Great success!</h1>
-    <button class="btn">DO NOT PRESS THIS BUTTON!</button>
-</div>
+<style lang="postcss">
+    .link {
+        @apply underline font-semibold;
+    }
+</style>
 
+<div class="text-center space-y-10">
+  <h1 class="font-bold uppercase text-7xl">Great success!</h1>
+  <div style="position: relative; padding-bottom: calc(56.25% + 44px)">
+    <iframe
+      title="Wow Gif"
+
+      src="https://gfycat.com/ifr/DistortedWellmadeHamster"
+      frameborder="0"
+      scrolling="no"
+      width="100%"
+      height="100%"
+      style="position:absolute;top:0;left:0;"
+      allowfullscreen
+    ></iframe>
+  </div>
+  <p>Check out the <a href="/about" class="link">about page</a> for details on how to add a new markdown blog post. For more information on how this template works read this blog post LINK.
+</div>

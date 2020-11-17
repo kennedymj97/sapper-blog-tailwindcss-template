@@ -586,6 +586,17 @@ video {
   height: auto;
 }
 
+code {
+  font-family: "SF Mono", menlo, inconsolata, monospace;
+  font-size: calc(1em - 2px);
+  color: #555;
+  background-color: #f0f0f0;
+  padding: 0.2em 0.4em;
+  border-radius: 2px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .container {
   width: 100%;
 }
@@ -615,8 +626,8 @@ video {
 }
 
 .prose {
-  color: #4a5568;
-  max-width: none;
+  color: #333;
+  max-width: 65ch;
 }
 
 .prose [class~="lead"] {
@@ -739,47 +750,6 @@ video {
   font-size: 0.875em;
   line-height: 1.4285714;
   margin-top: 0.8571429em;
-}
-
-.prose code {
-  color: #1a202c;
-  font-weight: 600;
-  font-size: 0.875em;
-}
-
-.prose code::before {
-  content: "`";
-}
-
-.prose code::after {
-  content: "`";
-}
-
-.prose pre {
-  color: #e2e8f0;
-  background-color: #2d3748;
-  overflow-x: auto;
-  font-size: 0.875em;
-  line-height: 1.7142857;
-  margin-top: 1.7142857em;
-  margin-bottom: 1.7142857em;
-  border-radius: 0.375rem;
-  padding-top: 0.8571429em;
-  padding-right: 1.1428571em;
-  padding-bottom: 0.8571429em;
-  padding-left: 1.1428571em;
-}
-
-.prose pre code {
-  background-color: transparent;
-  border-width: 0;
-  border-radius: 0;
-  padding: 0;
-  font-weight: 400;
-  color: inherit;
-  font-size: inherit;
-  font-family: inherit;
-  line-height: inherit;
 }
 
 .prose pre code::before {
@@ -24177,8 +24147,8 @@ video {
 @media (min-width: 640px) {
 
   .sm\:prose {
-    color: #4a5568;
-    max-width: none;
+    color: #333;
+    max-width: 65ch;
   }
 
   .sm\:prose [class~="lead"] {
@@ -24301,47 +24271,6 @@ video {
     font-size: 0.875em;
     line-height: 1.4285714;
     margin-top: 0.8571429em;
-  }
-
-  .sm\:prose code {
-    color: #1a202c;
-    font-weight: 600;
-    font-size: 0.875em;
-  }
-
-  .sm\:prose code::before {
-    content: "`";
-  }
-
-  .sm\:prose code::after {
-    content: "`";
-  }
-
-  .sm\:prose pre {
-    color: #e2e8f0;
-    background-color: #2d3748;
-    overflow-x: auto;
-    font-size: 0.875em;
-    line-height: 1.7142857;
-    margin-top: 1.7142857em;
-    margin-bottom: 1.7142857em;
-    border-radius: 0.375rem;
-    padding-top: 0.8571429em;
-    padding-right: 1.1428571em;
-    padding-bottom: 0.8571429em;
-    padding-left: 1.1428571em;
-  }
-
-  .sm\:prose pre code {
-    background-color: transparent;
-    border-width: 0;
-    border-radius: 0;
-    padding: 0;
-    font-weight: 400;
-    color: inherit;
-    font-size: inherit;
-    font-family: inherit;
-    line-height: inherit;
   }
 
   .sm\:prose pre code::before {
@@ -47674,8 +47603,8 @@ video {
 @media (min-width: 768px) {
 
   .md\:prose {
-    color: #4a5568;
-    max-width: none;
+    color: #333;
+    max-width: 65ch;
   }
 
   .md\:prose [class~="lead"] {
@@ -47798,47 +47727,6 @@ video {
     font-size: 0.875em;
     line-height: 1.4285714;
     margin-top: 0.8571429em;
-  }
-
-  .md\:prose code {
-    color: #1a202c;
-    font-weight: 600;
-    font-size: 0.875em;
-  }
-
-  .md\:prose code::before {
-    content: "`";
-  }
-
-  .md\:prose code::after {
-    content: "`";
-  }
-
-  .md\:prose pre {
-    color: #e2e8f0;
-    background-color: #2d3748;
-    overflow-x: auto;
-    font-size: 0.875em;
-    line-height: 1.7142857;
-    margin-top: 1.7142857em;
-    margin-bottom: 1.7142857em;
-    border-radius: 0.375rem;
-    padding-top: 0.8571429em;
-    padding-right: 1.1428571em;
-    padding-bottom: 0.8571429em;
-    padding-left: 1.1428571em;
-  }
-
-  .md\:prose pre code {
-    background-color: transparent;
-    border-width: 0;
-    border-radius: 0;
-    padding: 0;
-    font-weight: 400;
-    color: inherit;
-    font-size: inherit;
-    font-family: inherit;
-    line-height: inherit;
   }
 
   .md\:prose pre code::before {
@@ -71171,8 +71059,8 @@ video {
 @media (min-width: 1024px) {
 
   .lg\:prose {
-    color: #4a5568;
-    max-width: none;
+    color: #333;
+    max-width: 65ch;
   }
 
   .lg\:prose [class~="lead"] {
@@ -71295,47 +71183,6 @@ video {
     font-size: 0.875em;
     line-height: 1.4285714;
     margin-top: 0.8571429em;
-  }
-
-  .lg\:prose code {
-    color: #1a202c;
-    font-weight: 600;
-    font-size: 0.875em;
-  }
-
-  .lg\:prose code::before {
-    content: "`";
-  }
-
-  .lg\:prose code::after {
-    content: "`";
-  }
-
-  .lg\:prose pre {
-    color: #e2e8f0;
-    background-color: #2d3748;
-    overflow-x: auto;
-    font-size: 0.875em;
-    line-height: 1.7142857;
-    margin-top: 1.7142857em;
-    margin-bottom: 1.7142857em;
-    border-radius: 0.375rem;
-    padding-top: 0.8571429em;
-    padding-right: 1.1428571em;
-    padding-bottom: 0.8571429em;
-    padding-left: 1.1428571em;
-  }
-
-  .lg\:prose pre code {
-    background-color: transparent;
-    border-width: 0;
-    border-radius: 0;
-    padding: 0;
-    font-weight: 400;
-    color: inherit;
-    font-size: inherit;
-    font-family: inherit;
-    line-height: inherit;
   }
 
   .lg\:prose pre code::before {
@@ -94668,8 +94515,8 @@ video {
 @media (min-width: 1280px) {
 
   .xl\:prose {
-    color: #4a5568;
-    max-width: none;
+    color: #333;
+    max-width: 65ch;
   }
 
   .xl\:prose [class~="lead"] {
@@ -94792,47 +94639,6 @@ video {
     font-size: 0.875em;
     line-height: 1.4285714;
     margin-top: 0.8571429em;
-  }
-
-  .xl\:prose code {
-    color: #1a202c;
-    font-weight: 600;
-    font-size: 0.875em;
-  }
-
-  .xl\:prose code::before {
-    content: "`";
-  }
-
-  .xl\:prose code::after {
-    content: "`";
-  }
-
-  .xl\:prose pre {
-    color: #e2e8f0;
-    background-color: #2d3748;
-    overflow-x: auto;
-    font-size: 0.875em;
-    line-height: 1.7142857;
-    margin-top: 1.7142857em;
-    margin-bottom: 1.7142857em;
-    border-radius: 0.375rem;
-    padding-top: 0.8571429em;
-    padding-right: 1.1428571em;
-    padding-bottom: 0.8571429em;
-    padding-left: 1.1428571em;
-  }
-
-  .xl\:prose pre code {
-    background-color: transparent;
-    border-width: 0;
-    border-radius: 0;
-    padding: 0;
-    font-weight: 400;
-    color: inherit;
-    font-size: inherit;
-    font-family: inherit;
-    line-height: inherit;
   }
 
   .xl\:prose pre code::before {

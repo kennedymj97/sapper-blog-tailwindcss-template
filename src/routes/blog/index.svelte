@@ -12,26 +12,23 @@
   export let posts;
 </script>
 
-<style>
-</style>
+<style></style>
 
 <svelte:head>
   <title>Blog</title>
 </svelte:head>
 
 <div class="container">
-  <h1 class="mb-6 text-4xl">Blog</h1>
+  <h1 class="mb-10 text-4xl font-bold lg:text-5xl">Blog</h1>
   {#each posts as post, index} {#if index}
-  <hr class="my-4"/>
+  <hr class="my-10" />
   {/if}
-  <div class="">
-    <h2 class="mb-2 text-2xl">
+  <div class="mb-2">
+    <h2 class="mb-1 text-2xl font-semibold underline lg:text-3xl">
       <a rel="prefetch" href="blog/{post.slug}">{post.title}</a>
     </h2>
-    <p class="mb-2">{post.excerpt}</p>
-    <div class="">
-      <span class="">— {post.printDate}</span>
-    </div>
+    <span class="text-gray-600">{post.printDate} ~ {post.printReadingTime}</span>
   </div>
+  <p>{post.excerpt}</p>
   {/each}
 </div>
